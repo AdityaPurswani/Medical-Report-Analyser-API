@@ -1,3 +1,4 @@
 **/*.pyc
 .env
 cognid.xlsx
+MedicalRiskExtractor.py
