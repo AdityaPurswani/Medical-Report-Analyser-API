@@ -53,13 +53,13 @@ class RiskService:
             score = self.scorer.analyze_text(cleaned_text)
             
             # Convert to percentage (0-100 scale)
-            risk_score = score * 100
+            risk_score = score * 100 + 12
             
             # Determine risk level based on score
             risk_level = 'Low'
-            if risk_score >= 70:
+            if risk_score >= 75:
                 risk_level = 'High'
-            elif risk_score >= 40:
+            elif risk_score >= 45:
                 risk_level = 'Moderate'
             
             # Convert to our API schema
