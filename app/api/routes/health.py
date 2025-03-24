@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends
 from app.models.schemas.response import ResponseModel, StatusMessage
-from app.services.risk_service import RiskService
+from app.services.risk_service import EnhancedRiskService
 from app.config import get_settings
 
 router = APIRouter()
@@ -21,7 +21,7 @@ async def health_check():
 
 @router.get("/health/service", response_model=ResponseModel[StatusMessage])
 async def service_health(
-    risk_service: RiskService = Depends(lambda: RiskService())
+    risk_service: EnhancedRiskService = Depends(lambda: EnhancedRiskService())
 ):
     """
     Deep health check that verifies the risk service is initialized

@@ -46,9 +46,9 @@ def create_application() -> FastAPI:
         logging.info("Starting Medical Risk Analysis API")
         
         # Preload the risk service singleton to speed up first request
-        from app.services.risk_service import RiskService
+        from app.services.risk_service import EnhancedRiskService
         try:
-            RiskService()
+            EnhancedRiskService()
             logging.info("Risk service pre-initialized")
         except Exception as e:
             logging.warning(f"Risk service pre-initialization failed: {str(e)}")
