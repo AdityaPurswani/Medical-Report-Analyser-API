@@ -1,24 +1,17 @@
-# FastAPI and web server
-fastapi>=0.95.0
-uvicorn>=0.22.0
-python-multipart>=0.0.6
-python-dotenv>=1.0.0
-pydantic>=1.10.7
-
-# Machine learning dependencies (already in your existing pipeline)
-torch>=2.0.0
-transformers>=4.28.1
-sentence-transformers>=2.2.2
-scikit-learn>=1.2.2
-pandas>=2.0.0
-numpy>=1.24.3
-tqdm>=4.65.0
-spacy>=3.5.2
-
-# Additional utilities
-loguru>=0.7.0
-tenacity>=8.2.2
-httpx>=0.24.0
-
-# Spacy language models
+fastapi
+uvicorn
+python-multipart
+python-dotenv
+pydantic
+torch
+transformers
+sentence-transformers
+scikit-learn
+pandas
+numpy
+tqdm
+spacy
+loguru
+tenacity
+httpx
 en-core-web-lg @ https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0-py3-none-any.whl
