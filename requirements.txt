@@ -31,7 +31,6 @@ dash-core-components==2.0.0
 dash-html-components==2.0.0
 dash-table==5.0.0
 datasets==3.2.0
-datashape==0.5.4
 faiss-cpu==1.9.0.post1
 Farama-Notifications==0.0.4
 fastapi==0.115.8
